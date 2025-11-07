@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>230840019-Yosua Tambunan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="white-box">
+      <!-- bangun datar -->
+      <h2 class="judul">Bagun Datar</h2>
+      <div class="grid-area">
+        <!-- Persegi -->
+        <div class="box">
+            <form method="post" action="operasi.php" id="formPersegi">
+                <h4>Persegi</h4>
+                <div class="img"><img src="persegi.png" alt="gambar persegi"></div>
+                    <div class="form-row">
+                         <label for="sisiP">S <input type="number" name="sisiP" id="sisiP" required> cm</label> 
+                    </div>       
+                <button type="submit">Hitung</button>    
+               <div class="form-group">
+                <label for="luasP">Luas <input type="text" id="luasP" readonly></label><br>
+                <label for="kelilingP">Keliling <input type="text" id="kelilingP" readonly></label>
+                </div>
+               <p id="errorPersegi" style="color:red"></p>
+            </form>
+        </div>
+        <!-- Segitiga -->
+        <div class="box">
+            <form method="post" action="operasi.php" id="formSegitiga">
+                <h4>Segitiga sama sisi</h4>
+                <div class="img"><img src="segitiga.png" alt="gambar segitiga"></div>
+                <div class="form-row">
+                         <label for="sisiS">S <input type="number" name="sisiS" id="sisiS" required> cm</label> 
+                    </div>       
+                <button type="submit">Hitung</button>    
+               <div class="form-group">
+                <label for="luasS">Luas <input type="text" id="luasS" readonly></label><br>
+                <label for="kelilingS">Keliling <input type="text" id="kelilingS" readonly></label>
+                </div>
+              <p id="errorSegitiga" style="color:red"></p>
+            </form>
+        </div>
+        <!-- persegi panjang -->
+        <div class="box">
+            <form method="post" action="operasi.php" id="formPersegiPanjang">
+              <h4>Persegi Panjnag</h4>
+                <div class="img"><img src="persegipanjang.png" alt="gambar persegipanjang"></div>
+                <div class="form-row">
+                         <label for="panjangPP">P <input type="number" name="panjangPP" id="panjangPP" required> cm</label> 
+                    </div>
+                <div class="form-row">
+                         <label for="lebarPP">L <input type="number" name="lebarPP" id="lebarPP" required> cm</label> 
+                    </div>      
+                <button type="submit">Hitung</button>    
+               <div class="form-group">
+                <label for="luasPP">Luas <input type="text" id="luasPP" readonly></label><br>
+                <label for="kelilingPP">Keliling <input type="text" id="kelilingPP" readonly></label>
+                </div>
+                <p id="errorPersegiPanjang" style="color:red"></p>
+            </form>
+        </div>
+        <!-- Belah ketupat -->
+        <div class="box">
+            <form method="post" action="operasi.php" id="formBelahKetupat">
+              <h4>Belah Ketupat</h4>
+                <div class="img"><img src="belahketupat.png" alt="gambar belah ketupat"></div>
+                <div class="form-row">
+                         <label for="sisiBK">S <input type="number" name="sisiBK" id="sisiBK" required> cm</label> 
+                    </div>   
+                <div class="form-row">
+                         <label for="Diagonal1BK">D1 <input type="number" name="Diagonal1BK" id="Diagonal1BK" required> cm</label> 
+                    </div>              
+                <div class="form-row">
+                         <label for="Diagonal2BK">D2 <input type="number" name="Diagonal2BK" id="Diagonal2BK" required> cm</label> 
+                    </div>      
+                <button type="submit">Hitung</button>    
+               <div class="form-group">
+                <label for="luasBK">Luas <input type="text" id="luasBK" readonly></label><br>
+                <label for="kelilingBK">Keliling <input type="text" id="kelilingBK" readonly></label>
+                </div>
+                <p id="errorBelahketupat" style="color:red"></p>
+            </form>
+        </div>
+        <!-- Lingkaran -->
+        <div class="box">
+            <form method="post" action="operasi.php" id="formLingkaran">
+              <h4>Lingkaran</h4>
+                <div class="img"><img src="lingkaran.png" alt="gambar lingkaran"></div>
+                <div class="form-row">
+                         <label for="rL">r <input type="number" name="rL" id="rL" required> cm</label> 
+                    </div>       
+                <button type="submit">Hitung</button>    
+               <div class="form-group">
+                <label for="luasL">Luas <input type="text" id="luasL" readonly></label><br>
+                <label for="kelilingL">Keliling <input type="text" id="kelilingL" readonly></label>
+                </div>
+                  <p id="error" style="color:red"></p>
+        </div>
+        </form>
+        <!-- Bangun ruang -->
+      </div>
+      <h2 class="judul-kedua">Bagun Ruang</h2>
+      <div class="grid-area">
+        <!-- Kubus -->
+      <div class="box">
+          <form method="post" action="operasi.php" id="formKubus">
+                <h4>Kubus</h4>
+                <div class="img"><img src="kubus.png" alt="gambar kubus"></div>
+                    <div class="form-row">
+                         <label for="rK">S <input type="number" name="rK" id="rK" required> cm</label> 
+                    </div>       
+                <button type="submit">Hitung</button>    
+               <div class="form-group">
+                <label for="VolumeK">Volume <input type="text" id="VolumeK" readonly></label><br>
+                <label for="LuasPK">Luas P <input type="text" id="LuasPK" readonly></label>
+                </div>
+                  <p id="errorKubus" style="color:red"></p>
+            </form>
+      </div>
+      <!-- Balok -->
+      <div class="box">
+          <form method="post" action="operasi.php" id="formBalok">
+                <h4>Balok</h4>
+                <div class="img"><img src="balok.png" alt="gambar balok"></div>
+                    <div class="form-row">
+                         <label for="PanjangB">P <input type="number" name="PanjangB" id="PanjangB" required> cm</label> 
+                    </div>      
+                    <div class="form-row">
+                         <label for="LebarB">L <input type="number" name="LebarB" id="LebarB" required> cm</label> 
+                    </div> 
+                    <div class="form-row">
+                         <label for="TinggiB">T <input type="number" name="TinggiB" id="TinggiB" required> cm</label> 
+                    </div>  
+                <button type="submit">Hitung</button>    
+               <div class="form-group">
+                <label for="VolumeB">Volume <input type="text" id="VolumeB" readonly></label><br>
+                <label for="LuasPB">Luas P <input type="text" id="LuasPB" readonly></label>
+                </div>
+                  <p id="errorBalok" style="color:red"></p>
+            </form>
+      </div>
+      <!-- Kerucut -->
+      <div class="box">
+          <form method="post" action="operasi.php" id="formKerucut">
+                <h4>Kerucut</h4>
+                <div class="img"><img src="kerucut.png" alt="gambar Kerurcut"></div>
+                    <div class="form-row">
+                         <label for="rKr">r <input type="number" name="rKr" id="rKr" required> cm</label> 
+                    </div>      
+                    <div class="form-row">
+                         <label for="GarisPKr">S <input type="number" name="GarisPKr" id="GarisPKr" required> cm</label> 
+                    </div> 
+                    <div class="form-row">
+                         <label for="TinggiKr">T <input type="number" name="TinggiKr" id="TinggiKr" required> cm</label> 
+                    </div>         
+                <button type="submit">Hitung</button>    
+               <div class="form-group">
+                <label for="VolumeKr">Volume <input type="text" id="VolumeKr" readonly></label><br>
+                <label for="LuasPKr">Luas P <input type="text" id="LuasPKr" readonly></label>
+                </div>
+                  <p id="errorKerucut" style="color:red"></p>
+            </form>
+      </div>
+      <!-- Tabung -->
+      <div class="box">
+          <form method="post" action="operasi.php" id="formTabung">
+                <h4>Tabung</h4>
+                <div class="img"><img src="tabung.png" alt="gambar Tabung"></div>
+                     <div class="form-row">
+                         <label for="rT">r <input type="number" name="rT" id="rT" required> cm</label> 
+                    </div>      
+                    <div class="form-row">
+                         <label for="TinggiT">T <input type="number" name="TinggiT" id="TinggiT" required> cm</label> 
+                    </div>      
+                <button type="submit">Hitung</button>    
+               <div class="form-group">
+                <label for="VolumeT">Volume <input type="text" id="VolumeT" readonly></label><br>
+                <label for="LuasPT">Luas P <input type="text" id="LuasPT" readonly></label>
+                </div>
+                  <p id="errorTabung" style="color:red"></p>
+            </form>
+      </div>
+      <!-- Bola -->
+      <div class="box">
+          <form method="post" action="operasi.php" id="formBola">
+                <h4>Bola</h4>
+                <div class="img"><img src="bola.png" alt="gambar Bola"></div>
+                    <div class="form-row">
+                         <label for="rBo">r <input type="number" name="rBo" id="rBo" required> cm</label> 
+                    </div>       
+                <button type="submit">Hitung</button>    
+               <div class="form-group">
+                <label for="VolumeBo">Volume <input type="text" id="VolumeBo" readonly></label><br>
+                <label for="LuasPBo">Luas P <input type="text" id="LuasPBo" readonly></label>
+                </div>
+                  <p id="errorBola" style="color:red"></p>
+            </form>
+      </div>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+<footer>-Yosua Tambunan-</footer>
+</body>
+</html>
